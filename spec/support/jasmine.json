@@ -1,10 +1,16 @@
 {
   "spec_dir": "spec",
   "spec_files": [
-    "../**/tests/*[s]pec.ts"
+    "models/usersSpec.ts",
+    "models/productsSpec.ts",
+    "models/ordersSpec.ts",
+    "handlers/userRoutesSpec.ts",
+    "handlers/productRoutesSpec.ts",
+    "handlers/orderRoutesSpec.ts"
   ],
   "helpers": [
-    "helpers/**/*.js"
+    "helpers/reporter.ts",
+    "node_modules/jasmine-ts/lib/index.js"
   ],
   "reporters": [
     {
@@ -15,5 +21,5 @@
     }
   ],
   "stopSpecOnExpectationFailure": false,
-  "random": true
+  "random": false
 }
